@@ -36,17 +36,17 @@ export default function Sidebar() {
         {
             link: "/",
             icon: <Plus />,
-            text: "Recent 10 Documents"
+            text: "Recent 10 Pages"
           },
           {
             link: "/",
             icon: <Plus />,
-            text: "Recent 25 Documents"
+            text: "Recent 25 Pages"
           },
           {
             link: "/",
             icon: <Plus />,
-           text: "Recent 50 Documents"
+           text: "Recent 50 Pages"
           },
       ]
     }
