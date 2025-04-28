@@ -3,6 +3,8 @@
 import { BellIcon, Cookie, CreditCard, Inbox, MessageSquare, Plus, Settings, User } from "lucide-react";
 
 import { Command, CommandGroup, CommandItem, CommandList } from "./ui/command";
+import { Checkbox } from "@/components/ui/checkbox"
+
 import UserItem from "./Logo";
 
 export default function Sidebar() {
@@ -13,17 +15,17 @@ export default function Sidebar() {
         {
           link: "/",
           icon: <Plus />,
-          text: "with in 1 hour"
+          text: "Recent 10 Documents"
         },
         {
           link: "/",
           icon: <Plus />,
-          text: "last week"
+          text: "Recent 25 Documents"
         },
         {
           link: "/",
           icon: <Plus />,
-          text: "last month"
+         text: "Recent 50 Documents"
         },
        
       ]
@@ -32,20 +34,20 @@ export default function Sidebar() {
       group: "Recently Viewed Pages",
       items: [
         {
-          link: "/",
-          icon: <Plus />,
-          text: "with in 1 hour"
-        },
-        {
-          link: "/",
-          icon: <Plus />,
-          text: "last week"
-        },
-        {
-          link: "/",
-          icon: <Plus />,
-          text: "last month"
-        }
+            link: "/",
+            icon: <Plus />,
+            text: "Recent 10 Documents"
+          },
+          {
+            link: "/",
+            icon: <Plus />,
+            text: "Recent 25 Documents"
+          },
+          {
+            link: "/",
+            icon: <Plus />,
+           text: "Recent 50 Documents"
+          },
       ]
     }
   ]
@@ -61,7 +63,8 @@ export default function Sidebar() {
             <CommandGroup key={key} heading={menu.group}>
               {menu.items.map((option: any, optionKey: number) =>
                 <CommandItem key={optionKey} className="flex gap-2 cursor-pointer">
-                  {option.icon}
+                  <Checkbox />
+
                   {option.text}
                 </CommandItem>
               )}

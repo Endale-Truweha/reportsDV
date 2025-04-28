@@ -81,10 +81,11 @@ export default function SearchPage() {
 
 
 
-      <h1 className="text-2xl font-bold mb-4">Search</h1>
+     
 
 
 <div className=' flex  justify-center items-center '>
+
   <div className="relative w-1/2 mb-4 ">
   <input
     type="text"
@@ -100,7 +101,7 @@ export default function SearchPage() {
 
 
       {/* Toggle Buttons */}
-      <div className="flex gap-4 mb-4 ml-4">
+     {/*  <div className="flex gap-4 mb-4 ml-4">
         <button
           id="recent-docs-toggle"
           className={`px-4 py-2 border rounded ${includeRecentDocs ? 'bg-black text-white' : 'bg-gray-200'}`}
@@ -116,7 +117,7 @@ export default function SearchPage() {
         >
            Recently Viewed Pages
         </button>
-      </div>
+      </div> */}
       </div>
 
 

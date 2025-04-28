@@ -10,38 +10,34 @@ import {
     NavigationMenuViewport,
   } from "@/components/ui/navigation-menu"
 import { Button } from './ui/button'
+import { DatePickerWithRange } from './dateRenge'
+import { Label } from "@/components/ui/label"
+import { Switch } from "@/components/ui/switch"
 
 function Navbar() {
   return (
 
-    <div className=' grid grid-cols-2 place-items-center gap-4 mx-4 '>
+    <div className=' grid grid-cols-2 place-items-center gap-4 mx-4 pt-2'>
 
      <div >
-     <Button variant="outline" className=' border-0'>last hour</Button>
+    <DatePickerWithRange/>
      </div>
 
-        <div className=' '>
+        <div className='flex flex-col  space-y-4 justify-center  items-start '>
 
        
+       <div className="flex items-center space-x-2">
+      <Switch id="airplane-mode" />
+      <Label htmlFor="airplane-mode">Recently Viewed Documents</Label>
+    </div>
 
-        <NavigationMenu >
-  <NavigationMenuList>
-    <NavigationMenuItem>
-      <NavigationMenuTrigger>weekly</NavigationMenuTrigger>
-
-      <NavigationMenuContent>
-        <NavigationMenuLink className='w-fit'>week_1</NavigationMenuLink>
-        <NavigationMenuLink  className='w-fit'>week_2</NavigationMenuLink>
-        <NavigationMenuLink  className='w-fit'>week_2</NavigationMenuLink>
-        
-     
-      </NavigationMenuContent>
-
-
-
-    </NavigationMenuItem>
-  </NavigationMenuList>
-</NavigationMenu>
+    <div>
+    <div className="flex items-center space-x-2">
+      <Switch id="airplane-mode" />
+      <Label htmlFor="airplane-mode">Recently Viewed Pages</Label>
+    
+    </div>
+       </div>
 
         </div>
 
